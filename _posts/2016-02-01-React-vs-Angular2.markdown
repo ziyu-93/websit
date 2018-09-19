@@ -160,7 +160,6 @@ Angular 2 的内联母版（inline master templates）使用了这样的语法�
 React 因为语法和概念的简约而与众不同。我们不妨品味下当今流行的 JS 框架/库都是如何实现遍历的：
 
 ```
-Ember     : {{# each}}
 Angular 1 : ng-repeat
 Angular 2 : ngFor
 Knockout  : data-bind="foreach"
