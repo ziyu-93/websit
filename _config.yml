@@ -6,7 +6,7 @@ email: 494999197@qq.om
 description: "与你一起发现更大的世界。"
 keyword: "博客, 个人网站, 互联网, Web, JavaScript, 前端, 设计"
 url: "https://github.com/ziyu-93"              # your host, for absolute URL
-baseurl: "/websit"                             # for example, '/blog' if your blog hosted on 'host/blog'
+baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
 # Publish posts or collection documents with a future date.
 future: true
