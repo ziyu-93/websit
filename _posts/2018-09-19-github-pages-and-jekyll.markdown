@@ -38,21 +38,27 @@ tags:
     - 删除原地址 gem sources --remove https://rubygems.org/ 
     - 添加国内地址 gem source --add https://gems.ruby-china.com
 
-**找 jekyll 模板**
+**jekyll**
 
 官方有提供多种 **jekyll** 模板, 官网下载<br />
 或者直接找 **大神的模板**，直接修改
 - cd到文件夹中
 - jekyll serve ( 默认端口4000 )
 
-**上传至 github**
+**jekyll**本身就可以，启动项目
+- jekyll new project_name
+- cd project_name
+- jekyll serve
 
-> git add . <br>
-> git commit -m ''<br>
-> git pull --rebase origin master ( 如果有README.me )<br>
-> git push
+**上传至 github**
+```javascript
+git add . 
+git commit -m ''
+git pull --rebase origin master
+git push
+```
 
 感谢 [**黄轩**][1] 的博客模板
 
 
-[1]: https://huangxuan.me/ "asdad"
+[1]: https://huangxuan.me/ "Hux"
