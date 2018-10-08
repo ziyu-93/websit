@@ -6,6 +6,7 @@ date:       2018-09-19
 author:     "ZiYu"
 header-img: "img/post-bg-nextgen-web-pwa.jpg"
 navcolor:   "invert"
+# permalink: "asda"
 tags:
     - 前端开发
     - JavaScript

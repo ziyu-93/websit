@@ -1,0 +1,53 @@
+---
+layout:     post
+title:      "Mysql 8.0.- root用户无法连接 && 本地Mysql崩溃问题"
+subtitle:   "Mac Sequel Pro"
+date:       2018-09-25
+author:     "ZiYu"
+header-img: "img/post-bg-nextgen-web-pwa.jpg"
+navcolor:   "invert"
+# permalink: "asda"
+tags:
+    - 前端开发
+    - github
+    - mysql
+---
+
+### Mysql 链接问题
+> 工具 -- Mac Sequel Pro
+<br />
+> 数据库 -- Mysql 
+<br />
+> 用户 -- root 
+
+启动 **Mysql** 后，在`Sequel Pro`输入对应的内容，无法连接 root 用户
+```javascript
+mysql -h$host -u$user -p$password
+```
+
+在命令行中是可以，连接mysql 并且是链接成功的
+```javascript
+mysql -h$host -u$user -p$password
+use mysql;
+select user,host,plugin from user;
+```
+
+显示的列表中 --- `plugin: caching_sha2_password`
+因为 root 密码的加密方式，在本地没有找到解密的插件,所以登录不上去。
+
+尝试修改一下`root`用户的 **密码** 和 **加密方式**
+```javascript
+mysql>ALTER USER 'root'@'%' IDENTIFIED WITH mysql_native_password BY 'root';  ( BY 后面是重新设置的密码)
+```
+
+执行到这里后，重新启动 **Mysql**
+在 Sequel Pro 中重新输入，即可登录
+
+### Sequel Pro 版本问题
+
+> 在本地链接 **Sequel Pro** 并且创建表
+<br />
+> 添加完内容，退出重新进入，会出现  **Sequel Pro** 崩溃的问题
+
+这个原因是 `Sequel Pro` 的一个自身问题<br />
+解决办法 -- `Sequel Pro` 有一个 **bundle** 版本, 下载安装之后，即可使用，也不会出现崩溃的现象了
