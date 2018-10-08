@@ -1,0 +1,490 @@
+---
+title: Dapp
+layout: default
+---
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>my</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="D-Store,全球首个跨链DApp应用商店,来这里，遇见未来的区块链应用">
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+	<link rel="shortcut icon" type="image/x-icon" href="./images/icon.png" />
+
+	<script type="text/javascript">
+		// 自适应屏幕大小
+		function autoRem() {
+			var doc = document.documentElement;
+			var w = doc.getBoundingClientRect().width;
+			var scale = w / 2000;
+			doc.style.fontSize = 100 * scale + 'px';
+
+		};
+		autoRem();
+
+		var t;
+		window.addEventListener('resize', function () {
+			clearTimeout(t);
+			t = setTimeout(autoRem, 100);
+		}, false);
+		window.addEventListener('pageshow', function (e) {
+			if (e.persisted) {
+				clearTimeout(t);
+				t = setTimeout(autoRem, 100);
+			}
+		}, false);
+		// var EventUtil = {
+		// 	addHandler: function (element, type, handler) {
+		// 		if (element.addEventListener) {
+		// 			element.addEventListener(type, handler, false);
+		// 		} else if (element.attachEvent) {
+		// 			element.attachEvent("on" + type, handler);
+		// 		} else {
+		// 			element["on" + type] = handler;
+		// 		}
+		// 	}
+		// };
+		// (function () {
+		// 	var showCount = 0;
+		// 	EventUtil.addHandler(window, "load", function () {
+		// 		alert("Load fired");
+		// 	});
+		// 	EventUtil.addHandler(window, "pageshow", function (event) {
+		// 		showCount++;
+		// 		alert("Show has been fired " + showCount + " times.");
+		// 	});
+		// })();
+	</script>
+
+	<link rel="stylesheet" href="css/reset.min.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<!-- <div class="fixed clearfix">
+		<div class="auto">
+			<img src="./images/logo.png" class="logo fl">
+			<div class="nav fr pr">
+				<a href="#home" class="nav_list nav_list_cur0">
+					Home
+				</a>
+				<a href="#produ" class="nav_list">
+					Product
+				</a>
+				<a href="#whate" class="nav_list">
+					Whate
+				</a>
+				<a href="#team" class="nav_list">
+					Team
+				</a>
+				<a href="#about" class="nav_list">
+					Aubout
+				</a>
+
+				<p class="line"></p>
+			</div>
+		</div>
+	</div> -->
+
+	<header class="bg1" id="home">
+		<div class="cont clearfix">
+			<div class="fl text tc">
+				<p class="tit">
+					D-Store
+				</p>
+				<p class="small">
+					全球首个跨链DApp应用商店
+				</p>
+				<p class="small">
+					来这里，遇见未来的区块链应用
+				</p>
+				<p class="btn clearfix">
+					<span class="btn_l">White paper</span>
+					<span>One Page</span>
+				</p>
+			</div>
+			<div class="fl img">
+				<img src="./images/earth.png">
+			</div>
+		</div>
+	</header>
+
+	<section class="bg2 tc pr">
+		<div class="cont pa">
+			<div class="sec clearfix">
+				<p class="fl pr">
+					<img src="./images/rotate_z_earth.png" class="rotate_z_earth">
+					<img src="./images/rotate_y_earth.png" class="rotate_y_earth">
+				</p>
+
+				<div class="fr txt">
+					<p class="tit wow fadeInDown" data-wow-duration="2s" data-wow-offset="10">汇聚全球DApp，领略世界级的精彩</p>
+					<p class="small tl wow fadeInUp" data-wow-duration="2s" data-wow-offset="20">D-store支持市面上绝大多数公有链DApp，为全球的DApp提供统一的展示平台，一键使用您心目中的应用，给您最棒的一站式体验</p>
+				</div>
+			</div>
+			<div class="sec clearfix sec2">
+				<img src="./images/bg2-2.png" class="fr img">
+				<div class="fl txt">
+					<p class="tit wow fadeInDown" data-wow-duration="2s" data-wow-offset="10">多终端支持，打造最人性化的DApp商店</p>
+					<p class="small tl wow fadeInUp" data-wow-duration="2s" data-wow-offset="20">D-store将开发多个客户端，同时支持Web、Windows、Mac、Android、iOS，完善的搜索与查找功能，最短时间上手，使用无忧</p>
+				</div>
+			</div>
+		</div>
+		<img src="./images/bg2.jpg" class="img0">
+	</section>
+
+	<section class="bg3 clearfix pr" id="produ">
+		<img src="./images/left-out.jpg" class="fl img0">
+		<div class="fl cont">
+			<div class="sec clearfix">
+				<img src="./images/bg3-1.png" class="fl img">
+				<div class="fr txt">
+					<p class="tit tc wow fadeInDown" data-wow-duration="2s" data-wow-offset="10">一币通用所有DApp，虚拟货币实时承兑</p>
+					<p class="small tl wow fadeInUp" data-wow-duration="2s" data-wow-offset="20">D-store官方代币DST通用所有的DApp应用，智能承兑您的货币，免除麻烦的手动交易步骤，跨币种使用DApp再无烦恼</p>
+				</div>
+			</div>
+			<div class="sec clearfix sec2">
+				<p class="pr fr">
+					<img src="./images/bg3-2.png" class="img">
+					<img src="./images/big-run.png" class="big_img">
+					<img src="./images/small-run.png" class="small_img">
+				</p>
+				<div class="fl txt">
+					<p class="tit tc wow fadeInDown" data-wow-duration="2s" data-wow-offset="10">完善的技术支撑，帮助开发者快速开发DApp</p>
+					<p class="small tl wow fadeInUp" data-wow-duration="2s" data-wow-offset="20">为DApp开发者精心准备的创新型技术框架，提供开发、上线至市场推广的一站式服务，轻松实现迅速高效的DApp开发</p>
+				</div>
+			</div>
+		</div>
+
+		<p id="whate"></p>
+	</section>
+
+	<section class="bg4 pr">
+		<div class="cont">
+			<p class="tit tc wow fadeInUp" data-wow-duration="2s" data-wow-offset="20">什么事DST</p>
+			<p class="small tc">D-store Token，简称DST，是D-store平台中唯一能通用所有DApp流通的代币。</p>
+			<ul class="clearfix ul">
+				<img src="./images/bg4-1.png" class="img1 img">
+				<img src="./images/bg4-2.png" class="img2 img">
+				<img src="./images/bg4-3.png" class="img3 img">
+				<img src="./images/bg4-4.png" class="img4 img">
+				<img src="./images/bg4-5.png" class="img5 img">
+			</ul>
+		</div>
+
+		<svg class="editorial" xmlns="http://www.w3.org/2000/svg" viewBox="0 24 150 28" preserveAspectRatio="none">
+			<defs>
+				<path id="gentle-wave" d="m -160,44.4 c 30,0 58,
+		        -18 87.7,-18 30.3,0 58.3,
+		        18 87.3,18 30,0 58,-18 88,
+		        -18 30,0 58,18 88,18 l 0,
+		        34.5 -351,0 z" />
+			</defs>
+			<g class="parallax">
+				<use xlink:href="#gentle-wave" x="50" y="0" fill="#5d21f7" />
+				<use xlink:href="#gentle-wave" x="50" y="3" fill="#493df6" />
+				<use xlink:href="#gentle-wave" x="50" y="6" fill="#3839eb" />
+			</g>
+		</svg>
+	</section>
+
+	<section class="bg5 clearfix tc">
+		<div class="list">
+			<img src="./images/user.png" class="img">
+			<p class="tit">用户</p>
+			<p class="small">使用DApp或观看广告获取DST，使用DApp时可以将其兑换为所需要的虚拟货币</p>
+		</div>
+		<div class="list">
+			<img src="./images/dev.png" class="img">
+			<p class="tit">开发者</p>
+			<p class="small">花费少量DST提交DApp至D-store，可进行进一步流量购买，获取后续收益</p>
+		</div>
+		<div class="list">
+			<img src="./images/ad.png" class="img">
+			<p class="tit">广告商</p>
+			<p class="small">花费DST进行广告推广，流量投放全透明，精准触达DApp用户</p>
+		</div>
+	</section>
+
+	<section class="bg6 pr">
+		<div class="cont clearfix tc pa">
+			<div>
+				<img src="./images/left.png" class="fl img">
+				<img src="./images/right.png" class="fr img">
+				<p class="tit1">我们的未来</p>
+				<p class="tit2">我们的未来</p>
+			</div>
+			<div class="txt">
+				未来的D-store将采用去中心化的网络设计，建立自有Dchain公有链，所有的DApp数据将存于链上，开发者提交应用后由用户群自主审核，由矿工来执行DApp的上架及维护，形成基于区块链的去中心化并能自主运行，最终能形成完善DAC系统的DApp应用市场。
+			</div>
+			<div id="particles-js"></div>
+		</div>
+		<img src="./images/fly1.png" class="fly1">
+		<img src="./images/fly2.png" class="fly2">
+	</section>
+
+	<section class="bg7 clearfix" id="team">
+		<p class="tit tc">团队成员</p>
+		<ul class="ul clearfix">
+			<li class="list fl pr">
+				<p class="img tc">
+					<img src="./images/tx.jpg">
+				</p>
+				<p class="name tc">Jack Wang</p>
+				<div class="pa list_hide">
+					<p class="h"></p>
+					<p class="h_name tc">Jack Wang</p>
+					<p class="txt">
+						james wllisonMaster's from University of California, Los Angeles. Worked as a growth hacker in Facebook for 5+
+						years. Has rich experience in product development and project management of block
+
+					</p>
+					<p class="line"></p>
+				</div>
+			</li>
+			<li class="list fl pr">
+				<p class="img tc">
+					<img src="./images/tx.jpg">
+				</p>
+				<p class="name tc">Jack Wang</p>
+				<div class="pa list_hide">
+					<p class="h"></p>
+					<p class="h_name tc">Jack Wang</p>
+					<p class="txt">
+						james wllisonMaster's from University of California, Los Angeles. Worked as a growth hacker in Facebook for 5+
+						years. Has rich experience in product development and project management of block
+
+					</p>
+					<p class="line"></p>
+				</div>
+			</li>
+			<li class="list fl pr">
+				<p class="img tc">
+					<img src="./images/tx.jpg">
+				</p>
+				<p class="name tc">Jack Wang</p>
+				<div class="pa list_hide">
+					<p class="h"></p>
+					<p class="h_name tc">Jack Wang</p>
+					<p class="txt">
+						james wllisonMaster's from University of California, Los Angeles. Worked as a growth hacker in Facebook for 5+
+						years. Has rich experience in product development and project management of block
+
+					</p>
+					<p class="line"></p>
+				</div>
+			</li>
+			<li class="list fl pr">
+				<p class="img tc">
+					<img src="./images/tx.jpg">
+				</p>
+				<p class="name tc">Jack Wang</p>
+				<div class="pa list_hide">
+					<p class="h"></p>
+					<p class="h_name tc">Jack Wang</p>
+					<p class="txt">
+						james wllisonMaster's from University of California, Los Angeles. Worked as a growth hacker in Facebook for 5+
+						years. Has rich experience in product development and project management of block
+
+					</p>
+					<p class="line"></p>
+				</div>
+			</li>
+		</ul>
+		<p class="tit tc tit2">顾问&投资人</p>
+		<ul class="ul clearfix">
+			<li class="list fl pr">
+				<p class="img tc">
+					<img src="./images/tx.jpg">
+				</p>
+				<p class="name tc">Jack Wang</p>
+				<div class="pa list_hide">
+					<p class="h"></p>
+					<p class="h_name tc">Jack Wang</p>
+					<p class="txt">
+						james wllisonMaster's from University of California, Los Angeles. Worked as a growth hacker in Facebook for 5+
+						years. Has rich experience in product development and project management of block
+
+					</p>
+					<p class="line"></p>
+				</div>
+			</li>
+			<li class="list fl pr">
+				<p class="img tc">
+					<img src="./images/tx.jpg">
+				</p>
+				<p class="name tc">Jack Wang</p>
+				<div class="pa list_hide">
+					<p class="h"></p>
+					<p class="h_name tc">Jack Wang</p>
+					<p class="txt">
+						james wllisonMaster's from University of California, Los Angeles. Worked as a growth hacker in Facebook for 5+
+						years. Has rich experience in product development and project management of block
+
+					</p>
+					<p class="line"></p>
+				</div>
+			</li>
+			<li class="list fl pr">
+				<p class="img tc">
+					<img src="./images/tx.jpg">
+				</p>
+				<p class="name tc">Jack Wang</p>
+				<div class="pa list_hide">
+					<p class="h"></p>
+					<p class="h_name tc">Jack Wang</p>
+					<p class="txt">
+						james wllisonMaster's from University of California, Los Angeles. Worked as a growth hacker in Facebook for 5+
+						years. Has rich experience in product development and project management of block
+
+					</p>
+					<p class="line"></p>
+				</div>
+			</li>
+			<li class="list fl pr">
+				<p class="img tc">
+					<img src="./images/tx.jpg">
+				</p>
+				<p class="name tc">Jack Wang</p>
+				<div class="pa list_hide">
+					<p class="h"></p>
+					<p class="h_name tc">Jack Wang</p>
+					<p class="txt">
+						james wllisonMaster's from University of California, Los Angeles. Worked as a growth hacker in Facebook for 5+
+						years. Has rich experience in product development and project management of block
+
+					</p>
+					<p class="line"></p>
+				</div>
+			</li>
+		</ul>
+	</section>
+
+	<section class="bg8 clearfix pr" id="about">
+		<div class="cont">
+			<div class="clearfix">
+				<div class="fl">
+					<p class="logo-foot">
+						<img src="./images/logo-foot.png" height="32" width="57" class="img">
+						<span>D-Store</span>
+					</p>
+					<p class="bg_line"></p>
+					<p class="tel txt">
+						<span>联系方式：xxxxx</span>
+						<span>合作洽谈：xxxxx</span>
+					</p>
+					<p class="txt address">联系地址：xxxxxx</p>
+				</div>
+				<div class="fr code tc">
+					<p>联系我们</p>
+					<img src="./images/code.png">
+				</div>
+			</div>
+			<p class="foot_txt txt tc">
+				Copyright@XXXX Ltd. All rights reserved
+			</p>
+		</div>
+		<div class="pa float wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+			<div class="float_cont clearfix">
+				<div class="fl float_inner">
+					<p class="tit">投资机构</p>
+					<div class="list_wrap clearfix">
+						<li class="list fl">
+							<p class="img_wrap">
+								<img src="./images/a.png" class="img_small">
+							</p>
+							<p class="cn tr">连接资本</p>
+						</li>
+						<li class="list fl">
+							<p class="img_wrap">
+								<img src="./images/a.png" class="img_small">
+							</p>
+							<p class="cn tr">连接资本</p>
+						</li>
+						<li class="list fl">
+							<p class="img_wrap">
+								<img src="./images/a.png" class="img_small">
+							</p>
+							<p class="cn tr">连接资本</p>
+						</li>
+						<li class="list fl">
+							<p class="img_wrap">
+								<img src="./images/a.png" class="img_small">
+							</p>
+							<p class="cn tr">连接资本</p>
+						</li>
+					</div>
+				</div>
+
+				<div class="fl float_inner">
+					<p class="tit">合作媒体</p>
+					<div class="list_wrap clearfix">
+						<li class="list fl">
+							<p class="img_wrap">
+								<img src="./images/a.png" class="img_small">
+							</p>
+							<p class="cn tr">连接资本</p>
+						</li>
+						<li class="list fl">
+							<p class="img_wrap">
+								<img src="./images/a.png" class="img_small">
+							</p>
+							<p class="cn tr">连接资本</p>
+						</li>
+						<li class="list fl">
+							<p class="img_wrap">
+								<img src="./images/a.png" class="img_small">
+							</p>
+							<p class="cn tr">连接资本</p>
+						</li>
+						<li class="list fl">
+							<p class="img_wrap">
+								<img src="./images/a.png" class="img_small">
+							</p>
+							<p class="cn tr">连接资本</p>
+						</li>
+					</div>
+				</div>
+
+				<div class="fl float_inner">
+					<p class="tit fl last">合作伙伴</p>
+					<li class="list fl">
+						<p class="img_wrap">
+							<img src="./images/a.png" class="img_small">
+						</p>
+						<p class="cn tr">连接资本</p>
+					</li>
+					<li class="list fl">
+						<p class="img_wrap">
+							<img src="./images/a.png" class="img_small">
+						</p>
+						<p class="cn tr">连接资本</p>
+					</li>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/wow.min.js"></script>
+
+	<script src="js/particles.min.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/stats.js"></script>
+
+	<script src="js/public.js"></script>
+	<script>
+		if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))) {
+			new WOW().init();
+		};
+	</script>
+</body>
+
+</html>
