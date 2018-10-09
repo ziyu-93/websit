@@ -32,6 +32,7 @@ ssh-keygen -t rsa
 
 因为每个人的路径不同，所以这里就不写明了。<br />
 cd  到本地所给路径<br />
+或者 cd ~/.ssh/ <br />
 ```shell
 vim  id_rsa.pub  
 ```
