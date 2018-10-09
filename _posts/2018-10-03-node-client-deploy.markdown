@@ -1,8 +1,8 @@
 ---
 layout:     post
 title:      "node-client-deploy"
-subtitle:   "Mac Sequel Pro"
-date:       2018-10-02
+subtitle:   "nodeJs"
+date:       2018-10-03
 author:     "ZiYu"
 header-img: "img/post-bg-nextgen-web-pwa.jpg"
 navcolor:   "invert"
